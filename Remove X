@@ -1,0 +1,18 @@
+Input1 xaxb
+output ab
+void removeX(char input[]){
+if(input[0]=='\0'){
+  return;
+}
+if(input[0]=='x'){
+ int i;
+ for(i=1;i<strlen(input);i++){
+ input[i-1]=input[i]
+ }
+ input[i-1]=NULL;
+ pairStar(input);
+ }
+ else{
+ pairStar(input+1);
+ }
+}
